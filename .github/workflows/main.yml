@@ -16,5 +16,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: git push https://Bhevin:$HF_TOKEN@huggingface.co/spaces/Bhevin/Search-Engine-With-LLm-and-Agents main
